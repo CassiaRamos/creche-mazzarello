@@ -187,6 +187,12 @@
     background: linear-gradient(to bottom,#ffff00 0,(75%,#ffff50) 75%,(#ffff99) 100%)
 }
 
+.about-section1 {
+    padding-top: 10rem;
+    background: -webkit-gradient(linear,left top,left bottom,from(#ffff99),color-stop(75%,#ffff50),to(#ffff99));
+    background: linear-gradient(to bottom,#ffff99 0,(75%,#ffff50) 75%,(#ffff99) 100%)
+}
+
     .about-section p {
         margin-bottom: 5rem
     }
@@ -275,14 +281,14 @@ f
             text-align: center;
             height: 3rem;
             width: 3rem;
-            background: rgba(255,255,255,.1);
+            background: blue;
             border-radius: 100%;
             line-height: 3rem;
-            color: rgba(255,255,255,.3)
+            color: white
         }
 
             .contact-section .social a:hover {
-                color: rgba(255,255,255,.5)
+                color: white
             }
 
             .contact-section .social a:active {
@@ -317,4 +323,9 @@ a {
 
 footer {
     padding: 5rem 0
+}
+
+#face{
+    text-align: center;
+    color: white;
 }
