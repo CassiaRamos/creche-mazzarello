@@ -102,8 +102,8 @@
     height: auto;
     min-height: 35rem;
     padding: 15rem 0;
-    background: url(../img/bg-masthead.jpg);
-    background: url(../img/bg-masthead.jpg);
+    background: url(../img/bg-signup.jpg);
+    background: url(../img/bg-signup.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -163,12 +163,12 @@
 }
 
 .btn-primary {
-    background-color: #ffff00;
-    color: #000000
+    background-color: #000000;
+    color: #ffffff
 }
 
     .btn-primary:hover {
-        background-color: #ffff70;
+        background-color: #ffffff;
         color: #000000
     }
 
@@ -183,8 +183,8 @@
 
 .about-section {
     padding-top: 10rem;
-    background: -webkit-gradient(linear,left top,left bottom,from(#ffff00),color-stop(75%,#ffff50),to(#ffff99));
-    background: linear-gradient(to bottom,#ffff00 0,(75%,#ffff50) 75%,(#ffff99) 100%)
+    background: -webkit-gradient(linear,left top,left bottom,from(#ffff99),color-stop(75%,#ffff50),to(#ffff99));
+    background: linear-gradient(to bottom,#ffff99 0,(75%,#ffff50) 75%,(#ffff99) 100%)
 }
 
 .about-section1 {
@@ -231,8 +231,8 @@
 
 .signup-section {
     padding: 10rem 0;
-    background: -webkit-gradient(linear,left top,left bottom,from(rgba(22,22,22,.1)),color-stop(75%,rgba(22,22,22,.5)),to(#161616)),url(../img/bg-signup.jpg);
-    background: linear-gradient(to bottom,rgba(22,22,22,.1) 0,rgba(22,22,22,.5) 75%,#161616 100%),url(../img/bg-signup.jpg);
+    background: -webkit-gradient(linear,left top,left bottom,from(#ffff99),color-stop(75%,#ffff50),to(#ffff99));
+    background: linear-gradient(to bottom,#ffff99 0,(75%,#ffff50) 75%,(#ffff99) 100%)
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
