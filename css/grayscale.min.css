@@ -49,14 +49,14 @@
 
         #mainNav .navbar-brand {
             padding: .5rem 0;
-            color: #000000
+            color: #ffffff
         }
 
         #mainNav .nav-link {
             -webkit-transition: none;
             transition: none;
             padding: 2rem 1.5rem;
-            color: #000000
+            color: #ffffff
         }
 
             #mainNav .nav-link:hover {
@@ -92,7 +92,7 @@
                 #mainNav.navbar-shrink .nav-link.active {
                     color: #000000;
                     outline: 0;
-                    border-bottom: .25rem solid #000000
+                    border-bottom: .25rem solid black
                 }
 }
 
@@ -115,7 +115,7 @@
         font-size: 2.5rem;
         line-height: 2.5rem;
         letter-spacing: .8rem;
-        background: -webkit-linear-gradient(#ffff00,#ffff99);
+        background: -webkit-linear-gradient(#ffffff,#fffdfd);
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text
     }
@@ -163,7 +163,7 @@
 }
 
 .btn-primary {
-    background-color: #000000;
+    background-color: #000000ce;
     color: #ffffff
 }
 
@@ -252,23 +252,24 @@
     }
 f
 .contact-section {
-    padding: 5rem 0 0
+    padding: 5rem 0 0;
 }
 
     .contact-section .card {
         border: 0;
-        border-bottom: .25rem solid #ffff00
+        border-bottom: .25rem solid black;
+        background: #ffff6a
     }
 
         .contact-section .card h4 {
             font-size: .8rem;
             font-family: 'Varela Round';
             text-transform: uppercase;
-            letter-spacing: .15rem
+            letter-spacing: .15rem;
         }
 
         .contact-section .card hr {
-            border-color: #ffff00;
+            border-color: black;
             border-width: .25rem;
             width: 3rem
         }
@@ -327,5 +328,5 @@ footer {
 
 #face{
     text-align: center;
-    color: white;
+    color: black;
 }
