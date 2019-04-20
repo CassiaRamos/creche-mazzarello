@@ -232,7 +232,7 @@
 .signup-section {
     padding: 10rem 0;
     background: -webkit-gradient(linear,left top,left bottom,from(#ffff99),color-stop(75%,#ffff50),to(#ffff99));
-    background: linear-gradient(to bottom,#ffff99 0,(75%,#ffff50) 75%,(#ffff99) 100%)
+    background: linear-gradient(to bottom,#ffff99 0,(75%,#ffff50) 75%,(#ffff99) 100%);
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -330,4 +330,118 @@ footer {
     text-align: center;
     color: black;
 }
+
+.carousel {
+    width: 100%;
+    height: 100%;
+    transform: translateZ(0);
+  }
+  
+  .carousel input {
+    position: absolute;
+    left: -10000px;
+  }
+  
+  .carousel__stage {
+    overflow: hidden;
+    font-size: 16px;
+    white-space: nowrap;
+    width: 100%;
+    height: 100%;
+    transition: text-indent 600ms;
+    position: relative;
+    background: -webkit-gradient(linear,left top,left bottom,from(#ffff99),color-stop(75%,#ffff50),to(#ffff99));
+    background: linear-gradient(to bottom,#ffff50 0,(75%,#ffff50) 75%,(#ffff99) 100%)
+  }
+  
+  .carousel__item {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    text-indent: 0;
+    opacity: 0.6;
+    text-align: center;
+  }
+  
+  .carousel__image {
+    height: 50%;
+    width: 50%;
+    display: inline-block;
+  }
+  
+  .carousel__next,
+  .carousel__prev {
+    display: none;
+    position: absolute;
+    top: 50%;
+    color: #fff;
+    background: #000000b4;
+    z-index: 1;
+    font-size: 1rem;
+    padding: 20px;
+    cursor: pointer;
+    border-radius: 5%;
+  }
+  
+  .carousel__prev {
+    left: 0;
+  }
+  
+  .carousel__prev:after {
+    content: ' << ';
+    display: inline-block;
+  }
+  
+  .carousel__next {
+    right: 0;
+  }
+  
+  .carousel__next:after {
+    content: ' >> ';
+    display: inline-block;
+  }
+  
+  #carousel1:checked ~ .carousel__stage .carousel__item:nth-child(1),
+  #carousel2:checked ~ .carousel__stage .carousel__item:nth-child(2), 
+  #carousel3:checked ~ .carousel__stage .carousel__item:nth-child(3), 
+  #carousel4:checked ~ .carousel__stage .carousel__item:nth-child(4),
+  #carousel5:checked ~ .carousel__stage .carousel__item:nth-child(5) {
+    opacity: 1;
+  }
+  
+  #carousel1:checked ~ .carousel__stage {
+    text-indent: 0;
+  }
+  
+  #carousel2:checked ~ .carousel__stage {
+    text-indent: -100%;
+  }
+  
+  #carousel3:checked ~ .carousel__stage {
+    text-indent: -200%;
+  }
+  
+  #carousel4:checked ~ .carousel__stage {
+    text-indent: -300%;
+  }
+
+  #carousel5:checked ~ .carousel__stage {
+    text-indent: -400%;
+  }
+  
+  #carousel1:checked ~ .carousel__stage .carousel__item:nth-child(1) .carousel__prev,
+  #carousel1:checked ~ .carousel__stage .carousel__item:nth-child(1) .carousel__next,
+  #carousel2:checked ~ .carousel__stage .carousel__item:nth-child(2) .carousel__prev,
+  #carousel2:checked ~ .carousel__stage .carousel__item:nth-child(2) .carousel__next,
+  #carousel3:checked ~ .carousel__stage .carousel__item:nth-child(3) .carousel__prev,
+  #carousel3:checked ~ .carousel__stage .carousel__item:nth-child(3) .carousel__next,
+  #carousel4:checked ~ .carousel__stage .carousel__item:nth-child(4) .carousel__prev,
+  #carousel4:checked ~ .carousel__stage .carousel__item:nth-child(4) .carousel__next,
+  #carousel5:checked ~ .carousel__stage .carousel__item:nth-child(5) .carousel__prev,
+  #carousel5:checked ~ .carousel__stage .carousel__item:nth-child(5) .carousel__next {
+    display: block;
+  }
+  
+  
 
